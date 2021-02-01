@@ -2,12 +2,12 @@
     background: #f1f1f1;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-areas: "cabecalho" "conteudo" "rodape";
     /* definindo a area de cada template*/
-    grid-template-columns: auto;
+    grid-template-areas: "cabecalho" "conteudo" "rodape";
     /*definindo o tamanho das colunas (nesse caso temos uma coluna)*/
-    grid-template-rows: 50px auto auto;
+    grid-template-columns: auto;
     /*definindo o tamanho das rows do template (nesse caso temos tres rows --> cabecalho, conteudo, rodape)*/
+    grid-template-rows: 50px auto auto;
 }
 
 .cabecalho {
