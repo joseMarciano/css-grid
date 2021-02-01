@@ -1,14 +1,23 @@
 .app {
     background: #f1f1f1;
-    display: grid;  
     font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas: "cabecalho" "conteudo" "rodape";
+    /* definindo a area de cada template*/
+    grid-template-columns: auto;
+    /*definindo o tamanho das colunas (nesse caso temos uma coluna)*/
+    grid-template-rows: 50px auto auto;
+    /*definindo o tamanho das rows do template (nesse caso temos tres rows --> cabecalho, conteudo, rodape)*/
 }
 
 .cabecalho {
+    grid-area: cabecalho; /* associando nome do template area do pai com o nome template are do filho*/
 }
- 
+
 .conteudo {
+    grid-area: conteudo; /* associando nome do template area do pai com o nome template are do filho*/
 }
 
 .rodape {
+    grid-area: rodape; /* associando nome do template area do pai com o nome template are do filho*/
 }
